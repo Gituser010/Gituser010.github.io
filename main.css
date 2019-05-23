@@ -5,3 +5,28 @@
 .date {
   min-width: 18rem;
 }
+
+#css17 {
+  color: rgb(192,192,190);
+  padding-left: 80px; 
+  padding-top: 10px; 
+
+}
+
+#cssob{
+
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  display: block !important ;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+}
+#demo
+{
+  color: green;
+}
+#demo1
+{
+  color: red;
+}

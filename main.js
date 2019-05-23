@@ -7,5 +7,30 @@ $(document).ready(function () {
 function handleSubmit(event) {
   event.preventDefault();
 
-  console.log('submit');
+  var msg = $('#msg').val();
+  var email = $('#email').val();
+
+  var data = {
+    to: "mpentrak58@gmail.com",
+    subject: "Kontaktný Formulár",
+    body: msg,
+    from: email
+  }
+
+  $.ajax({
+    type: "POST",
+    url: "https://stored.azurewebsites.net/api/mail",
+    headers: {
+      "Authorization": 'Bearer ' + token
+    },
+    data: JSON.stringify(data),
+    contentType: "application/json"
+  })
+    .done(function () {
+      document.getElementById("demo1").innerHTML= "";
+      document.getElementById("demo").innerHTML= "email:"+email+" odoslal správu";
+    })
+    .fail(function (error) {
+      document.getElementById("demo1").innerHTML= "zadajte správu";
+    });
 }
