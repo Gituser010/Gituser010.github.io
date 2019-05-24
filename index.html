@@ -35,7 +35,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top mb-5">
     <a class="navbar-brand" href="#"><img src="logo.png" height="50px" width="50px" alt="moje_logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -46,16 +46,16 @@
           <a class="nav-link" href="#about">O mne</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#experience">skúsenosti</a>
+          <a class="nav-link" href="#experience">Skúsenosti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#education">vzdelanie</a>
+          <a class="nav-link" href="#education">Vzdelanie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#skills">zručnosti</a>
+          <a class="nav-link" href="#skills">Zručnosti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#interests">záujmi</a>
+          <a class="nav-link" href="#interests">Záujmi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Kontakt</a>
@@ -63,7 +63,7 @@
       </ul>
     </div>
   </nav>
-
+<div class="container mt-5">
   <div class="container mt-5">
 
     <section id="about">
@@ -79,7 +79,7 @@
     </section>
 
     <section id="experience">
-      <h2>skúsenosti</h2> 
+      <h2>Skúsenosti</h2> 
       <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
         <div>
           <h3>Junior Web Designer</h3>
@@ -91,7 +91,7 @@
     </section>
 
     <section id="education">
-      <h2>vzdelanie</h2>
+      <h2>Vzdelanie</h2>
       <p >
         Základná škola, Školská ulica 3, 05304 Spišské Podhradie 2011-2016 <br>
         TECHNICKÁ AKADÉMIA ,Hviezdoslavova 6 ,052 01 Spišská Nová Ves 2016-študujem 
@@ -99,24 +99,24 @@
     </section>
 
     <section id="skills" >
-      <h2 >zručnosti</h2>
+      <h2 >Zručnosti</h2>
       <p>
         <ul>
-          <li>Web</li>
+          <li id="zoznam" > <b> Web </b></li>
             <ul>
               <li>HTML- mierne pokročilý</li>
               <li>CSS - mierne pokročilý</li>
               <li>JS  - mierne pokročilý</li>
               <li>bootstrap4 - mierne pokročilý </li>
             </ul>
-          <li>Programovacie jazyky</li>
+          <li id="zoznam" ><b>Programovacie jazyky </b></li>
             <ul>
               <li>Java - začiatočník</li>
               <li>Python - začiatočník</li>
               <li>C - začiatočník</li>
               <li>Asembler - začiatočník</li>
             </ul>
-          <li>jazyky</li>
+          <li id="zoznam" >  <b>jazyky </b></li>
             <ul>
               <li>Anglický jazyk - B1</li>
             </ul>
@@ -126,7 +126,7 @@
     </section>
 
     <section id="interests">
-      <h2>záujmy</h2>
+      <h2>Záujmy</h2>
       <p>
         <ul>
           <li>Futbal</li>
@@ -139,32 +139,37 @@
       </p>
     </section>
 
+    
+
+  </div>
+  <div class="container mt-5">
     <section id="contact">
       <h2 id="contact">Kontakt</h2>
       <form>
         <div class="form-group">
+
           <label for="email">Email:</label>
           <input type="email" class="form-control" id="email" required>
         </div>
-        <div id="demo" ></div>
         
+        <div id="demo" ></div>
         <div class="form-group">
           <label for="msg">Správa:</label>
-          <div id="demo1"></div>
+          <div id="demo1" ></div>
           <textarea class="form-control" rows="5" id="msg"></textarea>
         </div>
         <button type="submit" class="btn btn-dark">Potvrdiť</button>
       </form>
     </section>
-
   </div>
+</div>
 
   <br>
   <footer class="bg-dark">
     <div class="row">
       <div class="panel-footer bg-dark" id="css17">Martin Pentrák <br> III.D <br> TASNV <br> 2018/2019</div>
       <div class="bg-dark"  id="cssob"> <a href="#about"> <img   id="cssob" src="logo.png" height="100px" width="100px" alt="moje_logo"></div></a>
-      <div class="panel-footer bg-dark" style="align-content: center"></div>
+      
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

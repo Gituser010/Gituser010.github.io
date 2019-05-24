@@ -18,8 +18,8 @@
   padding-top: 10px; 
   padding-bottom: 10px;
   display: block !important ;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-left: 32.5% !important;
+  
 
 }
 #demo
@@ -30,3 +30,32 @@
 {
   color: red;
 }
+nav
+{
+  margin-bottom: 100px !important;
+}
+#demo2
+{
+
+  font-size: 100px;
+  color: red;
+  text-decoration: none;
+}
+ul li
+{
+
+  list-style-type: none;
+  padding-top: 5px;
+}
+#experiencess
+{
+
+  scroll-margin-top: 50px;
+}
+#zoznam
+{
+  text-transform: uppercase;
+}
+
+
+

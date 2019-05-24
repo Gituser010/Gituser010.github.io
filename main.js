@@ -29,8 +29,10 @@ function handleSubmit(event) {
     .done(function () {
       document.getElementById("demo1").innerHTML= "";
       document.getElementById("demo").innerHTML= "email:"+email+" odoslal správu";
+     
     })
     .fail(function (error) {
-      document.getElementById("demo1").innerHTML= "zadajte správu";
+      document.getElementById("demo").innerHTML= "";
+      document.getElementById("demo1").innerHTML= "zadajte správu:";
     });
 }
